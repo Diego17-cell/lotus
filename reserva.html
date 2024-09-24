@@ -7,10 +7,116 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/log2.png" alt="logo"></a>
+        </div>
+        <h1>Reserva tu Estancia</h1>
+    </header>
     <nav>
-        <a href="fotos.html">Fotos</a>
+        <a href="Catalogo.html">Catalogo</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="index.html">Inicio</a>
     </nav>
+    <section>
+        <h3>¿Listo para disfrutar de la tranquilidad y belleza de Finca Lotus? ¡Hacer tu reserva es muy sencillo! Sigue estos pasos para asegurar tu estadía:</h3>
+
+        <p><strong>Pasos para Reservar: </strong></p>
+
+        <ol>
+            <li><strong>Selecciona tus Fechas: </strong> Utiliza nuestro calendario interactivo para elegir las fechas disponibles en las que deseas alojarte.</li>
+
+            <li><strong>Elige tu Alojamiento: </strong> Ofrecemos una variedad de opciones de alojamiento que se ajustan a tus necesidades, desde habitaciones acogedoras hasta casas completas para grupos.</li>
+
+            <li><strong>Confirma los Detalles: </strong>Revisa los detalles de tu reserva, incluyendo número de huéspedes, duración de la estancia, y servicios adicionales que quieras agregar.</li>
+
+            <li><strong>Realiza el Pago: </strong>Completa tu reserva a través de nuestro sistema de pago seguro. Aceptamos tarjetas de crédito, débito y transferencias bancarias.</li>
+
+            <li><strong>Recibe la Confirmación: </strong>Una vez finalizado el proceso, recibirás un correo electrónico de confirmación con toda la información de tu reserva.</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <h3>Políticas de Reserva</h3>
+        <ul>
+            <li><strong>Check-in y Check-out: </strong>El check-in se realiza a partir de las 3:00 p.m. y el check-out es hasta las 12:00 p.m. Si necesitas un horario especial, por favor contáctanos con anticipación.</li>
+
+            <li><strong>Cancelaciones: </strong>Si necesitas cancelar o modificar tu reserva, te pedimos que lo hagas con al menos 72 horas de antelación para recibir un reembolso completo. Para cancelaciones realizadas dentro de las 72 horas previas, aplicarán cargos.</li>
+
+            <li><strong>Depósito de Seguridad: </strong>Para garantizar tu reserva, solicitamos un depósito del 50%, que será reembolsado al momento del check-out si no se presentan daños a la propiedad.</li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h3>Formulario de reserva</h3>
+        
+        <form action="">
+            <fieldset>
+                <legend>Datos de reserva</legend>
+
+                <label for="lfinca">Finca de interes</label>
+                <select name="finca" id="lfinca">
+                    <option value="Lotus">Lotus</option>
+                    <option value="Zen">Zen</option>
+                    <option value="Nirvana">Nirvana</option>
+                    <option value="Mandala">Mandala</option>
+                </select>    
+                <br>
+                <label for="lfecing">Fecha de ingreso</label>
+                <input type="date" name="fec_ing" id="lfecing">
+                <br>
+                <label for="lfecsal">Fecha de salida</label>
+                <input type="date" name="fec_sal" id="lfecsal">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="lnom">Nombre completo</label>
+                <input type="text" autocomplete="off" placeholder="Titular de la reserva" name="name" id="lnom">
+                <br>
+                <label for="ldoc">Documento de identidad</label>
+                <input autocomplete="off" maxlength="15" placeholder="ingresa solo numeros" pattern="[0-9]{15}" type="text" name="documento" id="ldoc">
+                <br>
+                <label for="lcorreo">Correo electrónico</label>
+                <input type="email" name="correo" id="lcorreo" placeholder="email">
+                <br>
+                <label for="lfec">Fecha de nacimiento</label>
+                <input type="date" name="fec_nac" id="lfec" min="1960-01-01">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Metodo de pago</legend>
+                <details>
+                    <summary>Efectivo</summary>
+                    <p>Dirigete a nuestras oficinas en la Carrera 102 # 5 A 93, Medellín</p>
+                </details>
+                <details>
+                    <summary>Tarjeta de credito</summary>
+                        <input type="radio" name="tarjeta_credito" id="lvisa">
+                        <label for="lvisa">Visa</label>
+                        <br>
+                        <input type="radio" name="tarjeta_credito" id="lmastercard">
+                        <label for="lmastercard">Mastercard</label>
+                        <br>
+                        <input type="radio" name="tarjeta_credito" id="lAmerican">
+                        <label for="lAmerican">American Express</label>
+                </details>
+                <details>
+                    <summary>PSE</summary>
+                    <p>Accede al siguiente link para proceder con el pago <a href="#">PSE</a></p>
+                </details>
+            </fieldset>
+        </form>
+
+    </section>
+    <hr>
+    <section>
+        <h3>Contacto y Consultas</h3>
+        <p>Si tienes alguna duda sobre la disponibilidad, los alojamientos o el proceso de reserva, no dudes en ponerte en contacto con nosotros:</p>
+        <footer>
+            Teléfono: (+123) 456 7890
+            Correo electrónico: reservas@fincalotus.com
+        </footer>
+    </section>
 </body>
 </html>
