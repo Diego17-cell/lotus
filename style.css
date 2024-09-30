@@ -1,40 +1,129 @@
-body {
-    font-family: Arial, sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.gallery-container {
-    position: relative;
-    max-width: 300px;
-    margin: auto;
-    overflow: hidden;
+@font-face{
+    font-family: times, sans-serif;
+    src: url(font/TIMESS__.ttf);
 }
 
-.gallery-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.gallery-slide img {
+body{
+    font-size: 18px;
+    font-family: times;
+    text-align: justify;
+    line-height: 1.5;
     width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    background-image: url(images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    min-height: 100vh; /* Asegura que el fondo cubra al menos el 100% de la altura de la pantalla */
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(46, 46, 88,0.9);
+    color: white;
+    text-align:justify;
+    
+}
+
+.encabezado {
+    display: flex; /* Utiliza flexbox para distribuir los elementos */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Separa el logo a la izquierda y el texto a la derecha */
+}
+
+.logo img {
+    max-width: 150px; /* Ajusta el tamaño de la imagen según tu necesidad */
     height: auto;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+.titulo {
+    text-align: center; /* Alinea el texto a la derecha */
+}
+
+nav {
+    margin-left: 20px; /* Espacio entre el logo y el texto si es necesario */
+
+}
+
+nav a {
+    margin-left: 10px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #000000; /* Color de los enlaces */
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+nav a:hover {
+    color: white;/* Cambia el color al pasar el ratón por encima */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+main{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:50px;
+}
+
+/* Ajustar el tamaño del video */
+video {
+    width: 100%; /* El video ocupará el 100% del contenedor padre */
+    height: auto; /* Mantendrá la proporción de aspecto */
+    max-width: 600px; /* Tamaño máximo si deseas limitarlo */
+    display: block; /* Evitar márgenes indeseados por defecto */
+    margin: 0 auto; /* Centrar el video horizontalmente */
+}
+
+img{
+    width: 100%; 
+    height: auto; 
+    max-width: 600px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    font-size: .9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
     color: white;
-    font-size: 2rem;
-    padding: 16px;
-    cursor: pointer;
-    user-select: none;
 }
 
-.prev {
-    left: 0;
+footer img{
+    width: 40px;
+    display: inline-block;
+    padding: 10px;
 }
 
-.next {
-    right: 0;
+
+.carousel {
+    max-width: 500px; /* Cambia esto al ancho deseado */
+    margin: auto; /* Centra el carrusel en la página */
+}
+
+
+.carousel-inner img {
+    width: 100%; /* Mantiene el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 }

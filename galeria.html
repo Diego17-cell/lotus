@@ -1,150 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOTUS</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOTUS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <header>
-        <div class="encabezado">
-            <div class="titulo">
-                <h1>Galeria</h1>
-                <h2>Respira profundo, florece como el loto.</h2>
+    </head>
+    <body>
+
+        <header>
+            <div class="encabezado">
+                <div class="logo">
+                    <a href="index.html"> 
+                        <img src="images/LotusTrans.png" alt="logo">
+                    </a>
+                </div>
+                <div class="titulo">
+                    <h1>Galeria</h1>
+                    <h2>Respira profundo, florece como el loto.</h2>
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="reserva.html">Reserva</a>
+                </nav>
             </div>
-            <div class="logo">
-                <a href="index.html"><img src="images/log2.png" alt="logo"></a>
+        </header>
+
+        <main>
+            <p>En Lotus, te ofrecemos una selección exclusiva de cuatro fincas, cada una diseñada para brindarte una experiencia única, inmersa en la naturaleza y la serenidad que buscas. Descubre nuestras fincas y encuentra el espacio perfecto para tu próxima escapada.</p>
+            <section>
+                <nav>
+                    <strong>Finca Flower</strong>
+                    <p>La Finca Flower es nuestro refugio insignia, donde la paz y el equilibrio se sienten en cada rincón. Inspirada en la flor de loto, un símbolo de pureza y renacimiento, esta finca ofrece un ambiente perfecto para la relajación profunda. Rodeada de jardines floridos y con una hermosa vista a la montaña, Finca Flower cuenta con una piscina privada, áreas de meditación al aire libre y alojamientos rústicos pero modernos.</p>
+                    <ul>
+                        <li><strong>Capacidad: </strong> Hasta 10 personas</li><br>
+                        <li><strong>Características: </strong> Piscina privada, sala de meditación, jardín zen</li><br>
+                        <li><strong>Ideal para: </strong> Retiro de bienestar, desconexión total, reuniones familiares</li><br>
+                        <li><strong>Precio por noche: </strong> $350 USD</li>
+                    </ul>
+
+                    <div id="lotusCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/lotus/finca lotus.jpg" class="d-block w-100" alt="finca lotus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/lotus/habitacion 2 lotus.jpg" class="d-block w-100" alt="habitacion2 lotus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/lotus/habitacion lotus.jpg" class="d-block w-100" alt="habitacion1 lotus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/lotus/Jardin lotus.jpg" class="d-block w-100" alt="jardin lotus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/lotus/Meditacion Lotus.jpg" class="d-block w-100" alt="Meditacion lotus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/lotus/Piscina Lotus.jpg" class="d-block w-100" alt="piscina lotus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/lotus/sala lotus.jpg" class="d-block w-100" alt="sala lotus">
+                            </div>
+                        </div>
+                    
+                        <!-- Controles de navegación -->
+                        <a class="carousel-control-prev" href="#lotusCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#lotusCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    
+                    <hr>
+                    <strong>Finca Zen</strong>
+                    <p>Finca Zen es un espacio diseñado para encontrar el equilibrio entre cuerpo y mente. Con su decoración minimalista y ambiente tranquilo, es el lugar ideal para quienes buscan tranquilidad absoluta. La finca cuenta con un amplio jardín japonés, áreas de yoga y espacios para la contemplación en medio de la naturaleza.</p>
+                    <ul>
+                        <li><strong>Capacidad: </strong> Hasta 8 personas</li><br>
+                        <li><strong>Características: </strong> Jardín japonés, espacio para yoga, terraza con vistas panorámicas</li><br>
+                        <li><strong>Ideal para: </strong> Escapadas de meditación, talleres de yoga, retiros de silencio</li><br>
+                        <li><strong>Precio por noche: </strong> $300 USD</li>
+                    </ul>
+                    <div id="zenCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/zen/finca zen.jpg" class="d-block w-100" alt="finca zen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zen/habitacion zen.jpg" class="d-block w-100" alt="habitacion zen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zen/habitacion2 zen.jpg" class="d-block w-100" alt="habitacion2 zen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zen/Jardin Zen.jpg" class="d-block w-100" alt="jardin zen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zen/sala zen.jpg" class="d-block w-100" alt="sala zen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zen/Terraza Zen.jpg" class="d-block w-100" alt="terraza zen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/zen/Yoga Zen.jpg" class="d-block w-100" alt="yoga zen">
+                            </div>
+                        </div>
+                    
+                        <!-- Controles de navegación -->
+                        <a class="carousel-control-prev" href="#zenCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#zenCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    
+                    <hr>
+                    <strong>Finca Nirvana</strong>
+                    <p>En Finca Nirvana, la serenidad del entorno te llevará a un estado de paz interior. Esta finca está situada en una zona rodeada de bosques, lo que la convierte en un espacio perfecto para disfrutar de la naturaleza en su máxima expresión. Ideal para quienes buscan una conexión más profunda con el entorno, aquí se puede disfrutar de senderos naturales, fogatas nocturnas y alojamientos acogedores.</p>
+                    <ul>
+                        <li><strong>Capacidad: </strong> Hasta 12 personas</li><br>
+                        <li><strong>Características: </strong> Caminos naturales, espacio para fogatas, zona de lectura al aire libre</li><br>
+                        <li><strong>Ideal para: </strong> Vacaciones familiares, retiros espirituales, aventuras en la naturaleza</li><br>
+                        <li><strong>Precio por noche: </strong> $400 USD</li>
+                    </ul>
+                    <div id="nirvanaCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/nirvana/finca nirvana.webp" class="d-block w-100" alt="finca nirvana">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nirvana/Camino nirvana.jpg" class="d-block w-100" alt="camino nirvana">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nirvana/fogata nirvana.jpg" class="d-block w-100" alt="fogata nirvana">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nirvana/habitacion 2 nirvana.jpg" class="d-block w-100" alt="habitacion2 nirvana">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nirvana/habitacion nirvana.jpg" class="d-block w-100" alt="habitacion1 nirvana">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nirvana/lectura nirvana.jpg" class="d-block w-100" alt="lectura nirvana">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/nirvana/sala nirvana.jpg" class="d-block w-100" alt="sala nirvana">
+                            </div>
+                        </div>
+                    
+                        <!-- Controles de navegación -->
+                        <a class="carousel-control-prev" href="#nirvanaCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#nirvanaCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    
+                    <hr>
+                    <strong>Finca Mandala</strong>
+                    <p>Finca Mandala ofrece una experiencia de inmersión total en la armonía y el bienestar. Inspirada en la geometría sagrada, esta finca cuenta con espacios decorados para promover la calma y la introspección. Con su amplia piscina, jardines diseñados en forma de mandala, y zonas de descanso, es perfecta para quienes buscan una escapada holística.</p>
+                    <ul>
+                        <li><strong>Capacidad: </strong> Hasta 15 personas</li><br>
+                        <li><strong>Características: </strong> Piscina, jardines en forma de mandala, áreas de masaje</li><br>
+                        <li><strong>Ideal para: </strong> Retiros holísticos, eventos al aire libre, fines de semana en familia</li><br>
+                        <li><strong>Precio por noche: </strong> $450 USD</li>
+                    </ul>
+                    <div id="mandalaCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/mandala/finca mandala.jpg" class="d-block w-100" alt="finca mandala">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/mandala/habitacion mandala.jpg" class="d-block w-100" alt="habitacion mandala">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/mandala/Jardin Mandala.jpg" class="d-block w-100" alt="jardin mandala">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/mandala/Masajes Mandala.jpg" class="d-block w-100" alt="masaje mandala">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/mandala/Piscina Mandala.jpg" class="d-block w-100" alt="piscina mandala">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/mandala/sala mandala.jpg" class="d-block w-100" alt="sala mandala">
+                            </div>
+                        </div>
+                    
+                        <!-- Controles de navegación -->
+                        <a class="carousel-control-prev" href="#mandalaCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#mandalaCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                    
+                </nav>
+            </section>
+            <hr>
+            <p>Cada finca ofrece una experiencia única, con comodidades pensadas para el bienestar y la tranquilidad. Ya sea que busques una escapada en solitario, en familia o con un grupo, nuestras fincas tienen la capacidad perfecta para acomodar a todos.</p>
+        </main>
+
+        <footer>
+            <p>Todos los derechos reservados</p>
+            <p><a href="#">Tratamiento de datos</a></p>
+            <div class="redes">
+                <a href="#"><img src="images/icons/whatsapp.png" alt="whatsapp"></a>
+                <a href="#"><img src="images/icons/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/icons/instagram.png" alt="instagram"></a>
             </div>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="reserva.html">Reserva</a>
-            </nav>
-        </div>
-    </header>
+            <div class="Telefono">
+                Teléfono: (+123) 456 7890
+            </div>
+            <div class="email">
+                fincaslotusflower.com
+            </div>
+        </footer>
 
-    <main>
-        <p>En Lotus, te ofrecemos una selección exclusiva de cuatro fincas, cada una diseñada para brindarte una experiencia única, inmersa en la naturaleza y la serenidad que buscas. Descubre nuestras fincas y encuentra el espacio perfecto para tu próxima escapada.</p>
-        <section>
-            <nav>
-                <strong>Finca Flower</strong>
-                <p>La Finca Flower es nuestro refugio insignia, donde la paz y el equilibrio se sienten en cada rincón. Inspirada en la flor de loto, un símbolo de pureza y renacimiento, esta finca ofrece un ambiente perfecto para la relajación profunda. Rodeada de jardines floridos y con una hermosa vista a la montaña, Finca Flower cuenta con una piscina privada, áreas de meditación al aire libre y alojamientos rústicos pero modernos.</p>
-                <ul>
-                    <li><strong>Capacidad: </strong> Hasta 10 personas</li><br>
-                    <li><strong>Características: </strong> Piscina privada, sala de meditación, jardín zen</li><br>
-                    <li><strong>Ideal para: </strong> Retiro de bienestar, desconexión total, reuniones familiares</li><br>
-                    <li><strong>Precio por noche: </strong> $350 USD</li>
-                </ul>
-                <div class="gallery-container" id="lotus-gallery">
-                    <div class="gallery-slide">
-                        <img src="images/lotus/finca lotus.jpg" alt="finca lotus">
-                        <img src="images/lotus/habitacion 2 lotus.jpg" alt="habitacion2 lotus">
-                        <img src="images/lotus/habitacion lotus.jpg" alt="habitacion1 lotus">
-                        <img src="images/lotus/Jardin lotus.jpg" alt="jardin lotus">
-                        <img src="images/lotus/Meditacion Lotus.jpg" alt="Meditacion lotus">
-                        <img src="images/lotus/Piscina Lotus.jpg" alt="piscina lotus">
-                        <img src="images/lotus/sala lotus.jpg" alt="sala lotus">
-                    </div>
-                
-                    <!-- Flechas de navegación -->
-                    <a class="prev" onclick="plusSlides(-1, 'lotus-gallery')">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 'lotus-gallery')">&#10095;</a>
-                </div>
-                <hr>
-                <strong>Finca Zen</strong>
-                <p>Finca Zen es un espacio diseñado para encontrar el equilibrio entre cuerpo y mente. Con su decoración minimalista y ambiente tranquilo, es el lugar ideal para quienes buscan tranquilidad absoluta. La finca cuenta con un amplio jardín japonés, áreas de yoga y espacios para la contemplación en medio de la naturaleza.</p>
-                <ul>
-                    <li><strong>Capacidad: </strong> Hasta 8 personas</li><br>
-                    <li><strong>Características: </strong> Jardín japonés, espacio para yoga, terraza con vistas panorámicas</li><br>
-                    <li><strong>Ideal para: </strong> Escapadas de meditación, talleres de yoga, retiros de silencio</li><br>
-                    <li><strong>Precio por noche: </strong> $300 USD</li>
-                </ul>
-                <div class="gallery-container" id="zen-gallery">
-                    <div class="gallery-slide">
-                        <img src="images/zen/finca zen.jpg" alt="finca zen">
-                        <img src="images/zen/habitacion zen.jpg" alt="habitacion zen">
-                        <img src="images/zen/habitacion2 zen.jpg" alt="habitacion2 zen">
-                        <img src="images/zen/Jardin Zen.jpg" alt="jardin zen">
-                        <img src="images/zen/sala zen.jpg" alt="sala zen">
-                        <img src="images/zen/Terraza Zen.jpg" alt="terraza zen">
-                        <img src="images/zen/Yoga Zen.jpg" alt="yoga zen">
-                    </div>
-                
-                    <!-- Flechas de navegación -->
-                    <a class="prev" onclick="plusSlides(-1, 'zen-gallery')">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 'zen-gallery')">&#10095;</a>
-                </div>
-                <hr>
-                <strong>Finca Nirvana</strong>
-                <p>En Finca Nirvana, la serenidad del entorno te llevará a un estado de paz interior. Esta finca está situada en una zona rodeada de bosques, lo que la convierte en un espacio perfecto para disfrutar de la naturaleza en su máxima expresión. Ideal para quienes buscan una conexión más profunda con el entorno, aquí se puede disfrutar de senderos naturales, fogatas nocturnas y alojamientos acogedores.</p>
-                <ul>
-                    <li><strong>Capacidad: </strong> Hasta 12 personas</li><br>
-                    <li><strong>Características: </strong> Caminos naturales, espacio para fogatas, zona de lectura al aire libre</li><br>
-                    <li><strong>Ideal para: </strong> Vacaciones familiares, retiros espirituales, aventuras en la naturaleza</li><br>
-                    <li><strong>Precio por noche: </strong> $400 USD</li>
-                </ul>
-                <div class="gallery-container" id="nirvana-gallery">
-                    <div class="gallery-slide">
-                        <img src="images/nirvana/finca nirvana.webp" alt="finca nirvana">
-                        <img src="images/nirvana/Camino nirvana.jpg" alt="camino nirvana">
-                        <img src="images/nirvana/fogata nirvana.jpg" alt="fogata nirvana">
-                        <img src="images/nirvana/habitacion 2 nirvana.jpg" alt="habitacion2 nirvana">
-                        <img src="images/nirvana/habitacion nirvana.jpg" alt="habitacion1 nirvana">
-                        <img src="images/nirvana/lectura nirvana.jpg" alt="lectura nirvana">
-                        <img src="images/nirvana/sala nirvana.jpg" alt="sala nirvana">
-                    </div>
-                
-                    <!-- Flechas de navegación -->
-                    <a class="prev" onclick="plusSlides(-1, 'nirvana-gallery')">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 'nirvana-gallery')">&#10095;</a>
-                </div>
-                <hr>
-                <strong>Finca Mandala</strong>
-                <p>Finca Mandala ofrece una experiencia de inmersión total en la armonía y el bienestar. Inspirada en la geometría sagrada, esta finca cuenta con espacios decorados para promover la calma y la introspección. Con su amplia piscina, jardines diseñados en forma de mandala, y zonas de descanso, es perfecta para quienes buscan una escapada holística.</p>
-                <ul>
-                    <li><strong>Capacidad: </strong> Hasta 15 personas</li><br>
-                    <li><strong>Características: </strong> Piscina, jardines en forma de mandala, áreas de masaje</li><br>
-                    <li><strong>Ideal para: </strong> Retiros holísticos, eventos al aire libre, fines de semana en familia</li><br>
-                    <li><strong>Precio por noche: </strong> $450 USD</li>
-                </ul>
-                <div class="gallery-container" id="mandala-gallery">
-                    <div class="gallery-slide">
-                        <img src="images/mandala/finca mandala.jpg" alt="finca mandala">
-                        <img src="images/mandala/habitacion mandala.jpg" alt="habitacion mandala">
-                        <img src="images/mandala/Jardin Mandala.jpg" alt="jardin mandala">
-                        <img src="images/mandala/Masajes Mandala.jpg" alt="masaje mandala">
-                        <img src="images/mandala/Piscina Mandala.jpg" alt="piscina mandala">
-                        <img src="images/mandala/sala mandala.jpg" alt="sala mandala">
-                    </div>
-                
-                    <!-- Flechas de navegación -->
-                    <a class="prev" onclick="plusSlides(-1, 'mandala-gallery')">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 'mandala-gallery')">&#10095;</a>
-                </div>
-            </nav>
-        </section>
-        <hr>
-        <p>Cada finca ofrece una experiencia única, con comodidades pensadas para el bienestar y la tranquilidad. Ya sea que busques una escapada en solitario, en familia o con un grupo, nuestras fincas tienen la capacidad perfecta para acomodar a todos.</p>
-    </main>
-
-    <footer>
-        <p>Todos los derechos reservados</p>
-        <p><a href="#">Tratamiento de datos</a></p>
-        <div class="redes">
-            <a href="#"><img src="images/icons/whatsapp.png" alt="whatsapp"></a>
-            <a href="#"><img src="images/icons/facebook.png" alt="facebook"></a>
-            <a href="#"><img src="images/icons/instagram.png" alt="instagram"></a>
-        </div>
-        <div class="Telefono">
-            Teléfono: (+123) 456 7890
-        </div>
-        <div class="email">
-            fincaslotusflower.com
-        </div>
-    </footer>
-
-</body>
+    </body>
 </html>
