@@ -41,7 +41,7 @@ header {
 }
 
 .logo img {
-    max-width: 150px; /* Ajusta el tamaño de la imagen según tu necesidad */
+    max-width: 120px; /* Ajusta el tamaño de la imagen según tu necesidad */
     height: auto;
 }
 
@@ -55,15 +55,16 @@ nav {
 }
 
 nav a {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     margin-left: 10px; /* Espacio entre los enlaces */
     text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #000000; /* Color de los enlaces */
-    background-color: rgba(255, 255, 255, 0.75);
+    color: white; /* Color de los enlaces */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav a:hover {
-    color: white;/* Cambia el color al pasar el ratón por encima */
-    background-color: rgba(0, 0, 0, 0);
+    color: rgb(136, 221, 247);
 }
 
 
@@ -79,6 +80,8 @@ video {
     max-width: 600px; /* Tamaño máximo si deseas limitarlo */
     display: block; /* Evitar márgenes indeseados por defecto */
     margin: 0 auto; /* Centrar el video horizontalmente */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 img{
@@ -87,11 +90,7 @@ img{
     max-width: 600px;
     display: block; 
     margin: 0 auto;
-}
-
-.logo img{
-    width: 120px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 footer{
@@ -126,4 +125,41 @@ footer img{
     width: 100%; /* Mantiene el ancho al 100% del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Tamaño de los botones */
+    height: 40px; /* Tamaño de los botones */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+    color: white; /* Color del ícono */
+    border-radius: 50%; /* Botones redondeados */
+    text-align: center;
+    line-height: 50px; /* Centrado del ícono */
+    font-size: 24px; /* Tamaño del ícono */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos de transición */
+    z-index: 10; /* Asegura que los botones estén por encima del carrusel */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambio de fondo al pasar el mouse */
+    transform: scale(1.1); /* Agrandar ligeramente el botón al pasar el mouse */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Ubicación en la izquierda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Ubicación en la derecha */
+}
+
+/* Estilos para los íconos, si quieres mantener el ícono por defecto */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: transparent; /* Mantén el fondo transparente */
+    width: 100%; /* Asegura que el ícono ocupe todo el espacio */
+    height: 100%; /* Asegura que el ícono ocupe todo el espacio */
 }
