@@ -116,6 +116,39 @@ main .nosotros .video {
     flex: 40%; 
 }
 
+.galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria .flower{
+    flex: 25%;
+    display: flex;
+}
+
+.galeria .zen{
+    flex: 25%;
+    display: flex;
+}
+
+.galeria .nirvana{
+    flex: 25%;
+    display: flex;
+}
+
+.galeria .mandala{
+    flex: 25%;
+    display: flex;
+}
+
+.texto{
+    flex: 50%;
+}
+
+.carousel{
+    flex: 50%;
+}
+
 video {
     width: 100%;
     height: auto; 
@@ -129,7 +162,7 @@ video {
 img{
     width: 100%; 
     height: auto; 
-    max-width: 600px;
+    max-width: 370px;
     display: block; 
     margin: 0 auto;
     border-radius: 10px;
