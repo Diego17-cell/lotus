@@ -9,6 +9,39 @@
     src: url(font/TIMESS__.ttf);
 }
 
+html{
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(46, 46, 88,0.9);
+    color: white;
+    text-align:justify;
+    
+}
+
+header .encabezado {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+header .encabezado .logo{
+    max-width: 120px; 
+    height: auto;
+}
+
+header .encabezado .titulo {
+    text-align: center;
+}
+
+header .encabezado .paginas{
+    margin-left: 20px;
+}
+
 body{
     font-size: 18px;
     font-family: times;
@@ -25,34 +58,7 @@ body{
     min-height: 100vh; /* Asegura que el fondo cubra al menos el 100% de la altura de la pantalla */
 }
 
-header {
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(46, 46, 88,0.9);
-    color: white;
-    text-align:justify;
-    
-}
 
-.encabezado {
-    display: flex; /* Utiliza flexbox para distribuir los elementos */
-    align-items: center; /* Alinea verticalmente el contenido */
-    justify-content: space-between; /* Separa el logo a la izquierda y el texto a la derecha */
-}
-
-.logo img {
-    max-width: 120px; /* Ajusta el tamaño de la imagen según tu necesidad */
-    height: auto;
-}
-
-.titulo {
-    text-align: center; /* Alinea el texto a la derecha */
-}
-
-nav {
-    margin-left: 20px; /* Espacio entre el logo y el texto si es necesario */
-
-}
 
 nav a {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -73,11 +79,47 @@ main{
     padding:50px;
 }
 
-/* Ajustar el tamaño del video */
+main .intro {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+main .intro p {
+    flex: 50%; 
+}
+
+main .intro .video {
+    flex: 40%; 
+    margin: 5px 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+ul{
+    margin: 20px;
+}
+
+main .nosotros {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+main .nosotros p {
+    flex: 50%; 
+}
+
+main .nosotros .video {
+    flex: 40%; 
+}
+
 video {
-    width: 100%; /* El video ocupará el 100% del contenedor padre */
-    height: auto; /* Mantendrá la proporción de aspecto */
-    max-width: 600px; /* Tamaño máximo si deseas limitarlo */
+    width: 100%;
+    height: auto; 
+    max-width: 400px;
     display: block; /* Evitar márgenes indeseados por defecto */
     margin: 0 auto; /* Centrar el video horizontalmente */
     border-radius: 10px;
