@@ -170,17 +170,17 @@ img{
 
 footer{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(46, 46, 88,0.9);
     color: rgb(255, 255, 255);
     font-size: .9375rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 footer a{
     color: white;
+    text-decoration: none;
 }
 
 footer img{
