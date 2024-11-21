@@ -16,17 +16,23 @@ html{
 
 header {
     width: 100%;
-    padding: 20px;
-    background-color: rgba(46, 46, 88,0.9);
+    padding: 10px;
+    background-color: rgba(46, 46, 88,0.85);
     color: white;
-    text-align:justify;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header .encabezado {
     display: flex; 
     align-items: center; 
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%; 
 }
 
 header .encabezado .logo{
@@ -38,9 +44,33 @@ header .encabezado .titulo {
     text-align: center;
 }
 
-header .encabezado .paginas{
-    margin-left: 20px;
+
+
+
+.paginas a {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin: 5px; 
+    text-decoration: none; 
+    font-size: 16px;
+    color: black; 
+    background-color: rgb(179, 179, 217);
+    border-radius: 5px; 
+    transition: all 0.3s ease;
 }
+
+.paginas a:hover {
+    background-color: rgb(225, 225, 236);
+    color: black;
+    transform: scale(1.12);
+}
+
+.paginas a:active {
+    background-color: rgb(67, 67, 122);
+    transform: scale(1.05); 
+}
+
+
 
 body{
     font-size: 18px;
@@ -48,35 +78,23 @@ body{
     text-align: justify;
     line-height: 1.5;
     width: 100%;
-    margin: auto;
-    max-width: 1200px;
     background-image: url(images/fondo.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen en la pantalla */
-    background-attachment: fixed; /* Fija la imagen al fondo */
-    min-height: 100vh; /* Asegura que el fondo cubra al menos el 100% de la altura de la pantalla */
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    min-height: 100vh; 
 }
-
-
-
-nav a {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    margin-left: 10px; /* Espacio entre los enlaces */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: white; /* Color de los enlaces */
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-nav a:hover {
-    color: rgb(136, 221, 247);
-}
-
 
 main{
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.55);
     padding:50px;
+    margin-top: 115px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0; 
+    margin-right: 0; 
+    
 }
 
 main .intro {
@@ -153,8 +171,8 @@ video {
     width: 100%;
     height: auto; 
     max-width: 400px;
-    display: block; /* Evitar márgenes indeseados por defecto */
-    margin: 0 auto; /* Centrar el video horizontalmente */
+    display: block; 
+    margin: 0 auto; 
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -170,7 +188,7 @@ img{
 
 footer{
     width: 100%;
-    background-color: rgba(46, 46, 88,0.9);
+    background-color: rgba(46, 46, 88,0.85);
     color: rgb(255, 255, 255);
     font-size: .9375rem;
     display: flex;
@@ -191,50 +209,50 @@ footer img{
 
 
 .carousel {
-    max-width: 500px; /* Cambia esto al ancho deseado */
-    margin: auto; /* Centra el carrusel en la página */
+    max-width: 500px; 
+    margin: auto; 
 }
 
 
 .carousel-inner img {
-    width: 100%; /* Mantiene el ancho al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px; /* Tamaño de los botones */
-    height: 40px; /* Tamaño de los botones */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
-    color: white; /* Color del ícono */
-    border-radius: 50%; /* Botones redondeados */
+    width: 40px; 
+    height: 40px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white; 
+    border-radius: 50%; 
     text-align: center;
-    line-height: 50px; /* Centrado del ícono */
-    font-size: 24px; /* Tamaño del ícono */
+    line-height: 50px; 
+    font-size: 24px; 
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos de transición */
-    z-index: 10; /* Asegura que los botones estén por encima del carrusel */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    z-index: 10; 
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Cambio de fondo al pasar el mouse */
-    transform: scale(1.1); /* Agrandar ligeramente el botón al pasar el mouse */
+    background-color: rgba(0, 0, 0, 0.8); 
+    transform: scale(1.1); 
 }
 
 .carousel-control-prev {
-    left: 10px; /* Ubicación en la izquierda */
+    left: 10px; 
 }
 
 .carousel-control-next {
-    right: 10px; /* Ubicación en la derecha */
+    right: 10px; 
 }
 
-/* Estilos para los íconos, si quieres mantener el ícono por defecto */
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: transparent; /* Mantén el fondo transparente */
-    width: 100%; /* Asegura que el ícono ocupe todo el espacio */
-    height: 100%; /* Asegura que el ícono ocupe todo el espacio */
+    background-color: transparent;
+    width: 100%; 
+    height: 100%; 
 }

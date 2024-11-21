@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOTUS</title>
-    <link rel="icon" href="images/LotusTrans.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -118,71 +117,7 @@
                     </details>
                 </fieldset>
                 <button type="submit">Enviar reserva</button>
-            </form>
-
-            <script type="module">
-                // Importar las funciones necesarias de Firebase
-                import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-                import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
-                import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
-            
-                // Configuración de Firebase
-                const firebaseConfig = {
-                    apiKey: "AIzaSyByejTtCBXlzz5EeqMtgo-z212jmAP_rrM",
-                    authDomain: "fincas-lotus.firebaseapp.com",
-                    projectId: "fincas-lotus",
-                    storageBucket: "fincas-lotus.appspot.com",
-                    messagingSenderId: "1068330098114",
-                    appId: "1:1068330098114:web:04a378a647017c290a8a5b",
-                    measurementId: "G-WZH16PG5XP"
-                };
-            
-                // Inicializar Firebase y Firestore
-                const app = initializeApp(firebaseConfig);
-                const analytics = getAnalytics(app);
-                const db = getFirestore(app);
-            
-                // Referencia al formulario
-                const form = document.getElementById('reserva-form');
-            
-                // Evento de envío del formulario
-                form.addEventListener('submit', async (e) => {
-                    e.preventDefault();
-            
-                    // Obtener los datos del formulario
-                    const finca = document.getElementById('lfinca').value;
-                    const fechaIngreso = document.getElementById('lfecing').value;
-                    const fechaSalida = document.getElementById('lfecsal').value;
-                    const nombre = document.getElementById('lnom').value;
-                    const documento = document.getElementById('ldoc').value;
-                    const correo = document.getElementById('lcorreo').value;
-                    const fechaNacimiento = document.getElementById('lfec').value;
-            
-                    // Verificar si se ha seleccionado un método de pago con tarjeta de crédito
-                    const metodoPago = document.querySelector('input[name="tarjeta_credito"]:checked') ? 
-                    document.querySelector('input[name="tarjeta_credito"]:checked').nextElementSibling.textContent : "Efectivo/PSE";
-            
-                    try {
-                        // Añadir un nuevo documento a la colección "reservas"
-                        await addDoc(collection(db, "reservas"), {
-                            finca: finca,
-                            fechaIngreso: fechaIngreso,
-                            fechaSalida: fechaSalida,
-                            nombre: nombre,
-                            documento: documento,
-                            correo: correo,
-                            fechaNacimiento: fechaNacimiento,
-                            metodoPago: metodoPago
-                        });
-            
-                        alert('Reserva realizada con éxito');
-                    } catch (e) {
-                        console.error("Error al agregar el documento: ", e);
-                        alert('Hubo un error al realizar la reserva');
-                    }
-                });
-            </script>
-            
+            </form>            
 
         </section>
         <br>
