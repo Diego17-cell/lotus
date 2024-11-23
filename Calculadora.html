@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="encabezado">
+            <div class="logo">
+                <a href="index.html"> 
+                    <img src="images/LotusTrans.png" alt="logo">
+                </a>
+            </div>
+            <div class="titulo">
+                <h1>Calculadora</h1>
+            </div>
+            <nav class="paginas">
+                <a href="galeria.html">Galería</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="reserva.html">Reserva</a>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="calculadora">
+        <h1>Calcula tu presupuesto</h1>
+
+        <label for="finca">Selecciona la finca de interés:</label>
+        <select id="finca" required>
+            <option value="" selected disabled hidden>Seleccione una finca</option>
+            <option value="Flower">Flower (Capacidad máxima: 10 / Precio por persona: 37 usd)</option>
+            <option value="Zen">Zen (Capacidad máxima: 8 / Precio por persona: 40 usd)</option>
+            <option value="Nirvana">Nirvana (Capacidad máxima: 12 / Precio por persona: 35 usd)</option>
+            <option value="Mandala">Mandala (Capacidad máxima: 15 / Precio por persona: 30 usd)</option>
+        </select>
+        <br>
+    
+        <label for="personas">Cantidad de personas:</label>
+        <input type="number" id="personas" min="1" required>
+        <br>
+    
+        <button onclick="calcular()">Calcular</button>
+        <br>
+        <button onclick="limpiarCampos()">Limpiar</button>
+    
+        <p class="error" id="mensaje"></p>
+        <p id="resultadoBruto"></p>
+        <p id="resultadoIVA"></p>
+
+        <script src="calculadora.js"></script>
+    </main>
+
+    <footer>
+        <P>Todos los derechos reservados ©</P>
+        <a href="#">Tratamiento de datos</a>
+        <div class="redes">
+            <a href="#"><img src="images/icons/whatsapp.png" alt="whatsapp"></a>
+            <a href="#"><img src="images/icons/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="images/icons/instagram.png" alt="instagram"></a>
+        </div>
+        <div class="Telefono">
+            <p>Teléfono: (+123) 456 7890</p>
+        </div>
+        <div class="email">
+            <a href="https://diego17-cell.github.io/lotus/">Finca Lotus</a>
+        </div>
+        <div>
+            <p>Juan Diego Garcia Chavarriaga</p>
+        </div>
+    </footer>
+
+</body>
+</html>
